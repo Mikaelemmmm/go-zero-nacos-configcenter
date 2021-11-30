@@ -1,4 +1,4 @@
-#nacos
+#nacos config
 NacosConfig:
   DataId: user-srv.yaml
   Group: dev
