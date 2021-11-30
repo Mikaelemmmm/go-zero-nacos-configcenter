@@ -98,7 +98,6 @@ func (n *defaultNacos) InitConfig(listenConfigCallback ListenConfig) string {
 		Group:  n.cfg.Group,
 		OnChange: func(namespace, group, dataId, data string) {
 			//配置文件产生变化就会触发
-			fmt.Println("group:" + group + ", dataId:" + dataId + ", data:" + data)
 			if len(data) == 0{
 				logx.Errorf("listen nacos data nil error ,  namespace : %s，group : %s , dataId : %s , data : %s")
 				return
